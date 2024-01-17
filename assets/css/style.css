@@ -3,3 +3,11 @@ header{
     flex-wrap: wrap;
 }
 
+header h3{
+    flex:1 0 20%;
+}
+
+header nav {
+    flex:1 0 80%;
+    text-align: right;
+}
