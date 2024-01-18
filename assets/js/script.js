@@ -9,6 +9,7 @@ var choiceListEl= document.getElementById("choice-list")
 function startQuiz(){
     alert("test")
     introEl.classList.add("hide")
+    questionSectionEl.classList.remove("hide")
 
 }
 
