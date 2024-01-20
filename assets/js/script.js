@@ -20,14 +20,24 @@ function startQuiz(){
 
 
     questionSectionEl.classList.remove("hide")
+    renderQuestion()
 
     setIntervalId=setInterval(startTimer , 1000 )
 }
 function renderQuestion(){
     questionTitleEl.textContent=questionData[index].title
     choiceListEl.textContent=""
+    // <li> <button>choice1</button>  </li>
     for(var i=0; i<questionData[index].choices.length; i++ ){
+                // <li>  </li>
+        var li=document.createElement("li")
+        // <button>  </button>
+        var button=document.createElement("button")
         
+        // <buton> C1  </button> 
+        button.textContent=questionData[index].choices[i]
+        li.appendChild(button)
+        choiceListEl.appendChild(li)
     }
 }
 function startTimer(){
