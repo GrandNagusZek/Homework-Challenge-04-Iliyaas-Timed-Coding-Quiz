@@ -6,7 +6,7 @@ var startQuizEL= document.getElementById("start-quiz")
 var questionTitleEl= document.getElementById("question-title")
 var choiceListEl= document.getElementById("choice-list")
 var timerEl= document.getElementById("timer")
-
+var messageEl=document.getElementById("message")
 var setIntervalId
 var timeRemaining=questionData.length * 15
 var index=0
@@ -43,5 +43,29 @@ function renderQuestion(){
 function startTimer(){
     timerEl.textContent=timeRemaining--
 }
+function nextQuestion(event){
+    var currentChoiceBtn= event.target
+    var solution=questionData[index].solution
+    index++
+    // only display all questions inside the array
+    if(index < questionData.length){
 
+        if(currentChoiceBtn.textContent === solution){
+            messageEl.innerHTML="<h4>Correct!</h4>"
+        }else{
+            messageEl.innerHTML="<h4>Wrong!</h4>"
+            timeRemaining=timeRemaining-10
+        }
+        
+        renderQuestion()
+    }else{
+        //you go beyond the 5 questions you end the quiz
+        endQuiz()
+    }
+}
+
+function endQuiz(){
+    clearInterval(setIntervalId)
+}
  startQuizEL.addEventListener("click",startQuiz)
+ choiceListEl.addEventListener("click", nextQuestion)
