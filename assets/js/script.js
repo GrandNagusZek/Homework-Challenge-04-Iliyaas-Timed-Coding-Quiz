@@ -59,7 +59,7 @@ function nextQuestion(event){
         }
         //set a half second delay before rendering next question
         setTimeout( renderQuestion, 500)
-        renderQuestion()
+        
     }else{
         //you go beyond the 5 questions you end the quiz
         endQuiz()
@@ -68,6 +68,7 @@ function nextQuestion(event){
 
 function endQuiz(){
     clearInterval(setIntervalId)
+    questionSectionEl.classList.add("hide")
 }
  startQuizEL.addEventListener("click",startQuiz)
  choiceListEl.addEventListener("click", nextQuestion)
