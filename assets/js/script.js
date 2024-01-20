@@ -25,6 +25,7 @@ function startQuiz(){
     setIntervalId=setInterval(startTimer , 1000 )
 }
 function renderQuestion(){
+    messageEl.innerHTML=""
     questionTitleEl.textContent=questionData[index].title
     choiceListEl.textContent=""
     // <li> <button>choice1</button>  </li>
@@ -56,7 +57,8 @@ function nextQuestion(event){
             messageEl.innerHTML="<h4>Wrong!</h4>"
             timeRemaining=timeRemaining-10
         }
-        
+        //set a half second delay before rendering next question
+        setTimeout( renderQuestion, 500)
         renderQuestion()
     }else{
         //you go beyond the 5 questions you end the quiz
