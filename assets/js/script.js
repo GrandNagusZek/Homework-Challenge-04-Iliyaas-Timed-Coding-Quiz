@@ -7,6 +7,7 @@ var questionTitleEl= document.getElementById("question-title")
 var choiceListEl= document.getElementById("choice-list")
 var timerEl= document.getElementById("timer")
 var messageEl=document.getElementById("message")
+var scoreEl=document.getElementById("score")
 var setIntervalId
 var timeRemaining=questionData.length * 15
 var index=0
@@ -69,6 +70,8 @@ function nextQuestion(event){
 function endQuiz(){
     clearInterval(setIntervalId)
     questionSectionEl.classList.add("hide")
+    initialInputEl.classList.remove("hide")
+    scoreEl.textContent=
 }
  startQuizEL.addEventListener("click",startQuiz)
  choiceListEl.addEventListener("click", nextQuestion)
