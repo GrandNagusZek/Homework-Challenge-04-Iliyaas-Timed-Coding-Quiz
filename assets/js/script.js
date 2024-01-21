@@ -13,10 +13,12 @@ var timeRemaining=questionData.length * 15
 var index=0
 var submitButton= document.querySelector("#submit")
 
+// funtion to start quiz when user clicks 'start quiz' button
+
 
 function startQuiz(){
     
-
+// this is to hide the intro and reveal the quiz questions
     introEl.classList.add("hide")
 
 
@@ -25,6 +27,7 @@ function startQuiz(){
 
     setIntervalId=setInterval(startTimer , 1000 )
 }
+// renderQuestion function to create the html and content for the quiz questions 
 function renderQuestion(){
     messageEl.innerHTML=""
     questionTitleEl.textContent=questionData[index].title
@@ -42,9 +45,11 @@ function renderQuestion(){
         choiceListEl.appendChild(li)
     }
 }
+// allows the quiz timer to countdown
 function startTimer(){
     timerEl.textContent=timeRemaining--
 }
+
 function nextQuestion(event){
     var currentChoiceBtn= event.target
     var solution=questionData[index].solution
