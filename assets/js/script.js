@@ -73,6 +73,7 @@ function endQuiz(){
     initialInputEl.classList.remove("hide")
     scoreEl.textContent=timerEl.textContent
     highscoreEl.classList.remove("hide")
+  
 }
  startQuizEL.addEventListener("click",startQuiz)
  choiceListEl.addEventListener("click", nextQuestion)
@@ -80,7 +81,7 @@ function endQuiz(){
  submitButton.addEventListener("click", function() {
 
     var user ={
-        initialInput: initialInputEl.value,
+        highscore: highscoreEl.textContent,
         score: scoreEl.textContent
     };
 

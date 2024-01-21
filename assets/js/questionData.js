@@ -1,27 +1,27 @@
 var questionData=[
     {
-        title:"Q1",
-        choices:["C1","C2","C3","C4"],
-        solution: "C3"
+        title:"What does the acronym HTML stand for?",
+        choices:["High-Level Text Management Language","Hyperlink and Textual Markup Language","Hyper Text Markup Language","Home Tool Markup Language"],
+        solution: "Hyper Text Markup Language"
     },
     {
-        title:"Q2",
-        choices:["C1","C2","C3","C4"],
-        solution: "C1"
+        title:"Which CSS property is used to change the text color of an element?",
+        choices:["color","text-color","font-color","text-style"],
+        solution: "color"
     },
     {
-        title:"Q3",
-        choices:["C1","C2","C3","C4"],
-        solution: "C4"
+        title:"What is the correct way to declare a variable in JavaScript?",
+        choices:["variable x;","var x;","x = variable;","let x"],
+        solution: "let x"
     },
     {
-        title:"Q4",
-        choices:["C1","C2","C3","C4"],
-        solution: "C2"
+        title:"What is the purpose of the <head> element in an HTML document?",
+        choices:["It contains the main content of the page."," It links external stylesheets and scripts","It defines the header for a document.","It creates a horizontal line."],
+        solution: " It links external stylesheets and scripts"
     },
     {
-        title:"Q5",
-        choices:["C1","C2","C3","C4"],
-        solution: "C1"
+        title:"How can you center an element horizontally in CSS?",
+        choices:["margin-horizontal: auto;","text-align: center;","align-items: center;","center: horizontal;"],
+        solution: "margin-horizontal: auto;"
     }
 ]
