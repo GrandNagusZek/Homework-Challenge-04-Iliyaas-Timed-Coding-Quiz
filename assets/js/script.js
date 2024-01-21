@@ -11,7 +11,7 @@ var scoreEl=document.getElementById("score")
 var setIntervalId
 var timeRemaining=questionData.length * 15
 var index=0
-
+var submitEl=document.querySelector("submit")
 
 
 function startQuiz(){
@@ -71,7 +71,9 @@ function endQuiz(){
     clearInterval(setIntervalId)
     questionSectionEl.classList.add("hide")
     initialInputEl.classList.remove("hide")
-    scoreEl.textContent=
+    scoreEl.textContent=timerEl.textContent
 }
  startQuizEL.addEventListener("click",startQuiz)
  choiceListEl.addEventListener("click", nextQuestion)
+
+
