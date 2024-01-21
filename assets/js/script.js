@@ -11,7 +11,7 @@ var scoreEl=document.getElementById("score")
 var setIntervalId
 var timeRemaining=questionData.length * 15
 var index=0
-var submitEl=document.querySelector("submit")
+var submitButton= document.querySelector("#submit")
 
 
 function startQuiz(){
@@ -72,8 +72,18 @@ function endQuiz(){
     questionSectionEl.classList.add("hide")
     initialInputEl.classList.remove("hide")
     scoreEl.textContent=timerEl.textContent
+    highscoreEl.classList.remove("hide")
 }
  startQuizEL.addEventListener("click",startQuiz)
  choiceListEl.addEventListener("click", nextQuestion)
 
+ submitButton.addEventListener("click", function() {
+
+    var user ={
+        initialInput: initialInputEl.value,
+        score: scoreEl.textContent
+    };
+
+    localStorage.setItem("user",JSON.stringify(user));
+ });
 
