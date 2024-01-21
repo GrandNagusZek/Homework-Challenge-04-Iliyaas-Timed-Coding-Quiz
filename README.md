@@ -19,5 +19,9 @@ When a user answers a questions a message will appear informing them if the answ
 ## Links/Images
 Link to the live application: https://grandnaguszek.github.io/Homework-Challenge-04-Iliyaas-Timed-Coding-Quiz/
 
-Link to the GitHub repo for this project: 
+Link to the GitHub repo for this project: https://github.com/GrandNagusZek/Homework-Challenge-04-Iliyaas-Timed-Coding-Quiz.git
+
+Screenshot of live application:
+![Screenshot of Coding Quiz](https://github.com/GrandNagusZek/Homework-Challenge-04-Iliyaas-Timed-Coding-Quiz/blob/main/iliyaas%20timed%20coding%20quiz%20screenshot.png)
+
 ## Support/Contact
