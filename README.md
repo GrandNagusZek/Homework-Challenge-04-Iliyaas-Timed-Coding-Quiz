@@ -12,6 +12,7 @@ Then a timer starts and the user is presented with a question.
 When a user answers a questions a message will appear informing them if the answer was correct or incorrect. If the answer was incorrect -10 will be deducted from the time remaining. When all questions are answered or the timer reaches 0 the game is over. When the game is over the user can save their initials and score.
 
 ## Contributing
+Huge contribution by Phil Loy, instructor at UM Full Stack coding boot camp. His guidance on how to complete the project has been invaluable.
 
 ## License
  MIT License 
@@ -25,3 +26,8 @@ Screenshot of live application:
 ![Screenshot of Coding Quiz](https://github.com/GrandNagusZek/Homework-Challenge-04-Iliyaas-Timed-Coding-Quiz/blob/main/iliyaas%20timed%20coding%20quiz%20screenshot.png)
 
 ## Support/Contact
+Any questions and comments are welcome as I am eager to learn from any mistakes or improve on anything that can be better.
+
+Email: webdev53@sudomail.com
+
+Ph: +1 (646) 661-3768
