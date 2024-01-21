@@ -73,7 +73,7 @@ function endQuiz(){
     initialInputEl.classList.remove("hide")
     scoreEl.textContent=timerEl.textContent
     highscoreEl.classList.remove("hide")
-  
+    highscore=highscoreEl.textContent
 }
  startQuizEL.addEventListener("click",startQuiz)
  choiceListEl.addEventListener("click", nextQuestion)
@@ -81,8 +81,7 @@ function endQuiz(){
  submitButton.addEventListener("click", function() {
 
     var user ={
-        highscore: highscoreEl.textContent,
-        score: scoreEl.textContent
+        score: scoreEl.textContent,
     };
 
     localStorage.setItem("user",JSON.stringify(user));

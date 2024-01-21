@@ -1,10 +1,12 @@
 header{
     display: flex;
     flex-wrap: wrap;
+    margin-top: 20px;
 }
 
 header h3{
     flex:1 0 20%;
+    color: lightskyblue
 }
 
 header nav {
@@ -24,4 +26,18 @@ section {
 
 .hide{
     display: none;
+}
+
+section h1 {
+    font-size: 45px;
+}
+
+#choice-list {
+    font-size: 25px;
+        
+}
+
+ol li button {
+    background-color: lightskyblue;
+    padding: 10px;
 }

@@ -14,9 +14,10 @@ When a user answers a questions a message will appear informing them if the answ
 ## Contributing
 
 ## License
-
-## Credits
+ MIT License 
 
 ## Links/Images
+Link to the live application: https://grandnaguszek.github.io/Homework-Challenge-04-Iliyaas-Timed-Coding-Quiz/
 
+Link to the GitHub repo for this project: 
 ## Support/Contact
